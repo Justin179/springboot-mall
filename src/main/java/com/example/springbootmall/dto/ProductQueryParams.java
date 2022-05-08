@@ -1,8 +1,30 @@
 package com.example.springbootmall.dto;
 
 import com.example.springbootmall.constant.ProductCategory;
+import org.springframework.web.bind.annotation.RequestParam;
 
 public class ProductQueryParams {
+
+    public String getOrderBy() {
+        return orderBy;
+    }
+
+    public void setOrderBy(String orderBy) {
+        this.orderBy = orderBy;
+    }
+
+    public String getSort() {
+        return sort;
+    }
+
+    public void setSort(String sort) {
+        this.sort = sort;
+    }
+
+    private String orderBy;
+    private String sort;
+
+
     public ProductCategory getCategory() {
         return category;
     }
